@@ -34,7 +34,7 @@ body {
 }
 
 .menu {
-    width: 500px;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -42,6 +42,7 @@ body {
 
 .menu-item {
     position: relative;
+    width: 90%;
     height: 75px;
     display: flex;
     align-items: center;
@@ -50,7 +51,7 @@ body {
 
 .button {
     position: relative;
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@ body {
 
 .description {
     position: absolute;
-    width: 230px;
+    width: 60%;
     pointer-events: none;
     opacity: 0;
     transform: translateX(-50%);
