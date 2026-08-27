@@ -36,16 +36,16 @@ body {
 }
 
 .menu {
-    width: 90%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 0px;
 }
 
 .menu-item {
     position: relative;
-    width: 90%;
-    height: 75px;
+    width: 70%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
