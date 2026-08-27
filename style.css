@@ -25,6 +25,7 @@ body {
 
 .title {
     text-align: center;
+    width: 100%;
     top: 30px;
     left: 35px;
     font-size: 18px;
