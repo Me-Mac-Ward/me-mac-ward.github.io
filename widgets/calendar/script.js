@@ -75,25 +75,14 @@ function displayToday(activities) {
 
         const element = document.createElement("div");
 
-        element.className = "activity";
+        element.className = "today-activity";
 
         element.innerHTML = `
-            <div class="activity-time">
-                ${activity.start}
-            </div>
-
-            <div class="activity-details">
-
-                <div class="activity-title">
-                    ${activity.title}
-                </div>
-
-                <div class="activity-location">
-                    ${activity.location || ""}
-                </div>
-
-            </div>
-        `;
+                <div class="activity">
+                    ${activity.title}<br>
+                    ${activity.start} -- ${activity.end}<br> 
+                    ${activity.location || ""}<br>
+            `;
 
         container.appendChild(element);
     });
@@ -153,18 +142,6 @@ function displayUpcoming(activities) {
                     ${activity.title}<br>
                     ${activity.start} -- ${activity.end}<br> 
                     ${activity.location || ""}<br>
-
-                // <div class="upcoming-date">
-                //     ${formatUpcomingDate(activity.date)}
-                // </div>
-
-                // <div class="upcoming-time">
-                //     ${activity.start}
-                // </div>
-
-                // <div class="upcoming-title">
-                //     ${activity.title}
-                // </div>
             `;
 
             container.appendChild(element);
@@ -213,15 +190,9 @@ function displayAssignments(assignments) {
             element.className = "assignment";
 
             element.innerHTML = `
-                <div class="assignment-subject">
-                    ${assignment.subject}
-                </div>
-
-                <div class="assignment-title">
-                    ${assignment.title}
-                </div>
-
-                <div class="assignment-due">
+                <div class="activity">
+                    ${assignment.subject}<br>
+                    ${assignment.title}<br>
                     ${formatDueDate(assignment.due)}
                 </div>
             `;
