@@ -150,10 +150,9 @@ function displayUpcoming(activities) {
 
             element.innerHTML = `
                 <div class="activity">
-                    + ${activity.title} + "<br>" 
-                    + ${activity.start} + " -- " 
-                    + ${activity.end} + "<br>" 
-                    + ${(activity.location + "<br>") || ""}
+                    ${activity.title}<br>
+                    ${activity.start} -- ${activity.end}<br> 
+                    ${activity.location || ""}<br>
 
                 // <div class="upcoming-date">
                 //     ${formatUpcomingDate(activity.date)}
