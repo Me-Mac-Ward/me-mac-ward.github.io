@@ -45,7 +45,7 @@ function getDateOffset(days) {
 }
 
 
-// Display today's activities
+// Display 'TODAY' activities
 function displayToday(activities) {
 
     const today = getToday();
@@ -81,15 +81,14 @@ function displayToday(activities) {
                 <div class="activity">
                     ${activity.title}<br>
                     ${activity.start} -- ${activity.end}<br> 
-                    ${activity.location || ""}<br>
+                    ${activity.location || ""}<br><br>
             `;
 
-        container.appendChild(element);
-    });
+        container.appendChild(element);});
 }
 
 
-// Display upcoming activities
+// Display 'UP NEXT' activities
 function displayUpcoming(activities) {
 
     const today = getToday();
@@ -140,8 +139,8 @@ function displayUpcoming(activities) {
             element.innerHTML = `
                 <div class="activity">
                     ${activity.title}<br>
-                    ${activity.start} -- ${activity.end}<br> 
-                    ${activity.location || ""}<br>
+                    ${formatUpcomingDate(activity.date)} ${activity.start} -- ${activity.end}<br> 
+                    ${activity.location || ""}<br><br>
             `;
 
             container.appendChild(element);
@@ -193,7 +192,7 @@ function displayAssignments(assignments) {
                 <div class="activity">
                     ${assignment.subject}<br>
                     ${assignment.title}<br>
-                    ${formatDueDate(assignment.due)}
+                    ${formatDueDate(assignment.due)}<br><br>
                 </div>
             `;
 
