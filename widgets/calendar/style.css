@@ -20,7 +20,7 @@ body {
     color: #fff;
 }
 
-.calendar-widget {
+calendar-widget {
     width: 100%;
     height: 100%;
 
@@ -34,12 +34,12 @@ body {
 
 /* Columns */
 
-.left-column {
+left-column {
     flex: 1.618;
     height: 100%;
 }
 
-.right-column {
+right-column {
     flex: 1;
     height: 100%;
 
@@ -52,21 +52,19 @@ body {
 
 /* Sections */
 
-.today,
-.upcoming,
-.assignments {
+today, upcoming, assignments {
     width: 100%;
 }
 
-.today {
+today {
     height: 100%;
 }
 
-.upcoming {
+upcoming {
     flex: 1;
 }
 
-.assignments {
+assignments {
     flex: 1;
 }
 
@@ -86,19 +84,19 @@ h2 {
 
 /* Temporary styling so we can see the layout */
 
-.today {
+today {
     border: 1px solid #444;
     padding: 16px;
     border-radius: 16px;
 }
 
-.upcoming {
+upcoming {
     border: 1px solid #444;
     padding: 16px;
     border-radius: 16px;
 }
 
-.assignments {
+assignments {
     border: 1px solid #444;
     padding: 16px;
     border-radius: 16px;
