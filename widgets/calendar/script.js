@@ -149,17 +149,23 @@ function displayUpcoming(activities) {
             element.className = "upcoming-activity";
 
             element.innerHTML = `
-                <div class="upcoming-date">
-                    ${formatUpcomingDate(activity.date)}
-                </div>
+                <div class="activity">
+                    + ${activity.title} + "<br>" 
+                    + ${activity.start} + " -- " 
+                    + ${activity.end} + "<br>" 
+                    + ${(activity.location + "<br>") || ""}
 
-                <div class="upcoming-time">
-                    ${activity.start}
-                </div>
+                // <div class="upcoming-date">
+                //     ${formatUpcomingDate(activity.date)}
+                // </div>
 
-                <div class="upcoming-title">
-                    ${activity.title}
-                </div>
+                // <div class="upcoming-time">
+                //     ${activity.start}
+                // </div>
+
+                // <div class="upcoming-title">
+                //     ${activity.title}
+                // </div>
             `;
 
             container.appendChild(element);
