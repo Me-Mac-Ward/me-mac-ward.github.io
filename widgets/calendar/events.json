@@ -1,0 +1,61 @@
+{
+    "activities": [
+        {
+            "id": 1,
+            "date": "2026-08-27",
+            "start": "09:00",
+            "end": "10:00",
+            "title": "Physics Lecture",
+            "type": "lecture",
+            "location": "Lecture Theatre"
+        },
+        {
+            "id": 2,
+            "date": "2026-08-27",
+            "start": "11:00",
+            "end": "12:00",
+            "title": "Quantum Supervision",
+            "type": "Supervision",
+            "location": "Pembroke College"
+        },
+        {
+            "id": 3,
+            "date": "2026-08-27",
+            "start": "14:00",
+            "end": "15:00",
+            "title": "Mathematics Lecture",
+            "type": "lecture",
+            "location": "CMS"
+        },
+        {
+            "id": 4,
+            "date": "2026-08-28",
+            "start": "09:00",
+            "end": "10:00",
+            "title": "Chemistry Lecture",
+            "type": "lecture",
+            "location": "Chemistry Department"
+        }
+    ],
+
+    "assignments": [
+        {
+            "id": 1,
+            "title": "Physics Problem Sheet 1",
+            "subject": "Physics",
+            "due": "2026-08-29"
+        },
+        {
+            "id": 2,
+            "title": "Chemistry Questions",
+            "subject": "Chemistry",
+            "due": "2026-08-31"
+        },
+        {
+            "id": 3,
+            "title": "Mathematics Example Sheet",
+            "subject": "Mathematics",
+            "due": "2026-09-02"
+        }
+    ]
+}

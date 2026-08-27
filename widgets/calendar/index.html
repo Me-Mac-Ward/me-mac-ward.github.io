@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Calendar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendar Widget</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <main class="calendar-widget">
+        <!-- Left column -->
+        <div class="left-column"></div>
+            <!-- Today's activities -->
+            <section class="today">
 
-    <h1>My Calendar</h1>
+                <h2>Today</h2>
 
-    <p>Today:</p>
-    <ul>
-        <li>Let's see if this changes test</li>
-        <li>14:00 — Quantum Computing</li>
-        <li>16:00 — Gym</li>
-    </ul>
+                <div id="today-activities">
+                    <!-- JavaScript inserts activities here -->
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Right column -->
+        <div class="right-column">
+
+            <!-- Upcoming activities -->
+            <section class="upcoming">
+
+                <h2>Up Next</h2>
+
+                <div id="upcoming-activities">
+                    <!-- JavaScript inserts activities here -->
+                </div>
+
+            </section>
+
+
+            <!-- Assignments -->
+            <section class="assignments">
+
+                <h2>Assignments</h2>
+
+                <div id="assignments">
+                    <!-- JavaScript inserts assignments here -->
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
