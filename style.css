@@ -24,11 +24,12 @@ body {
 }
 
 .title {
-    text-align: center;
-    position: fixed;
-    width: 100%;
+    position: absolute;
     top: 30px;
-    left: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.5px;
