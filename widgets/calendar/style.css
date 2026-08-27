@@ -1,1 +1,105 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
 
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main widget */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                 "Helvetica Neue", Arial, sans-serif;
+
+    background: #000;
+    color: #fff;
+}
+
+.calendar-widget {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 24px;
+    gap: 24px;
+}
+
+
+/* Columns */
+
+.left-column {
+    width: 61.8%;
+    height: 100%;
+}
+
+.right-column {
+    width: 38.2%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+/* Sections */
+
+.today,
+.upcoming,
+.assignments {
+    width: 100%;
+}
+
+.today {
+    height: 100%;
+}
+
+.upcoming {
+    flex: 1;
+}
+
+.assignments {
+    flex: 1;
+}
+
+
+/* Section headings */
+
+h2 {
+    margin: 0 0 12px 0;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* Temporary styling so we can see the layout */
+
+.today {
+    border: 1px solid #444;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.upcoming {
+    border: 1px solid #444;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.assignments {
+    border: 1px solid #444;
+    padding: 16px;
+    border-radius: 16px;
+}
